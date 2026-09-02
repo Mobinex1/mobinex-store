@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mobinex | Mobile Accessories</title>
+    <meta
+      name="description"
+      content="mobinex is a mobile accessories store for phone cases, chargers, earbuds, power banks, and more."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <div class="brand">
+          <div class="brand-mark">M</div>
+          <span>mobinex</span>
+        </div>
+        <nav class="main-nav">
+          <a href="#home">Home</a>
+          <a href="#categories">Categories</a>
+          <a href="#search">Search</a>
+          <a href="#products">Products</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="action-btn light">Login</button>
+          <button class="action-btn primary">Cart (0)</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Mobile accessories for everyday life</p>
+            <h1>Upgrade your phone with premium essentials.</h1>
+            <p class="subtitle">
+              Discover fast chargers, protective cases, wireless earbuds, power banks,
+              and more designed for your daily tech life.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-btn" href="#products">Shop Now</a>
+              <a class="secondary-btn" href="#categories">Browse Categories</a>
+            </div>
+            <ul class="hero-stats">
+              <li><strong>10k+</strong><span>happy buyers</span></li>
+              <li><strong>4.8/5</strong><span>average rating</span></li>
+              <li><strong>48h</strong><span>delivery</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual">
+            <div class="product-showcase">
+              <div class="showcase-card large">
+                <span class="pill">Best seller</span>
+                <img
+                  src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80"
+                  alt="Wireless earbuds"
+                />
+                <div class="card-meta">
+                  <h3>AirWave Pro</h3>
+                  <p>$89.99</p>
+                </div>
+              </div>
+              <div class="showcase-card small">
+                <img
+                  src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=900&q=80"
+                  alt="Phone case"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="categories" class="categories section-space">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Shop by category</p>
+            <h2>Popular product categories</h2>
+          </div>
+          <div class="category-grid">
+            <article class="category-card" data-category="cases">
+              <div class="icon">📱</div>
+              <h3>Phone Cases</h3>
+              <p>Stylish protection for every device</p>
+            </article>
+            <article class="category-card" data-category="chargers">
+              <div class="icon">🔌</div>
+              <h3>Chargers</h3>
+              <p>Fast, safe, and reliable charging</p>
+            </article>
+            <article class="category-card" data-category="earbuds">
+              <div class="icon">🎧</div>
+              <h3>Earbuds</h3>
+              <p>Immersive sound on the go</p>
+            </article>
+            <article class="category-card" data-category="powerbanks">
+              <div class="icon">🔋</div>
+              <h3>Power Banks</h3>
+              <p>Extended battery life for travel</p>
+            </article>
+            <article class="category-card" data-category="screens">
+              <div class="icon">🛡️</div>
+              <h3>Screen Protectors</h3>
+              <p>Scratch resistance and clarity</p>
+            </article>
+            <article class="category-card" data-category="accessories">
+              <div class="icon">⌚</div>
+              <h3>Accessories</h3>
+              <p>Smart add-ons for everyday use</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="search" class="filters section-space">
+        <div class="container filter-panel">
+          <div class="filter-header">
+            <div>
+              <p class="eyebrow">Find your perfect fit</p>
+              <h2>Search and price filter</h2>
+            </div>
+          </div>
+
+          <div class="filter-controls">
+            <label class="search-box">
+              <span>Search products</span>
+              <input id="searchInput" type="search" placeholder="Search by product name..." />
+            </label>
+
+            <div class="price-box">
+              <label for="priceRange">Max price</label>
+              <div class="price-row">
+                <input id="priceRange" type="range" min="20" max="200" step="5" value="200" />
+                <strong id="priceValue">$200</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="chip-row" id="categoryFilters">
+            <button class="chip active" data-category="all">All</button>
+            <button class="chip" data-category="cases">Cases</button>
+            <button class="chip" data-category="chargers">Chargers</button>
+            <button class="chip" data-category="earbuds">Earbuds</button>
+            <button class="chip" data-category="powerbanks">Power Banks</button>
+            <button class="chip" data-category="screens">Screen Protectors</button>
+            <button class="chip" data-category="accessories">Accessories</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="products section-space">
+        <div class="container">
+          <div class="section-heading row-heading">
+            <div>
+              <p class="eyebrow">Featured picks</p>
+              <h2>Trending mobile accessories</h2>
+            </div>
+            <span id="resultsCount" class="results-count">0 items</span>
+          </div>
+          <div id="productGrid" class="product-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© 2026 mobinex. Mobile accessories that keep up with you.</p>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#categories">Categories</a>
+          <a href="#products">Products</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
